@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block contents %}
+  <section class="wrapper">
+    <h2 class="entry_title">新規事業者登録</h2>
+    <dl class="entry_form">
+      <dt>名前<span class="entry_required">必須</span></dt>
+      <dd><input class="entry_input" type="text"></dd>
+      <dt>読み仮名<span class="entry_required">必須</span></dt>
+      <dd><input class="entry_input" type="text"></dd>
+      <dt>メールアドレス<span class="entry_required">必須</span></dt>
+      <dd><input class="entry_input" type="text"></dd>
+      <dt>パスワード<span class="entry_required">必須</span></dt>
+      <dd><input class="entry_input" type="password"></dd>
+    </dl>
+    <div class="entry_button">
+      <button type="submit">登録する</button>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+  <section class="wrapper">
+    <h1 class="sarvice_title">サービス名</h1>
+    <img src="{% static 'assets/main.jpg' %}" alt="#">
+    <h2 class="service_explanaton">サービスについて</h2>
+    <p>ooなさーびすです</p>
+    <p>ooなさーびすです</p>
+    <p>ooなさーびすです</p>
+    <p>ooなさーびすです</p>
+    <h3>サービスを探す</h3>
+    <input type="text">
+    <button type="submit">検索</button>
+    <h3>新着</h3>
+    <ul class="service_list">
+      <li>
+        <a href="{% url 'diary:post_detail' %}">
+          <img src="{% static 'assets/fee.jpg' %}" alt="#">
+          <p>投稿名</p>
+          <p>事業者名</p>
+          <p>料金</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:post_detail' %}">
+          <img src="{% static 'assets/fee.jpg' %}" alt="#">
+          <p>投稿名</p>
+          <p>事業者名</p>
+          <p>料金</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:post_detail' %}">
+          <img src="{% static 'assets/fee.jpg' %}" alt="#">
+          <p>投稿名</p>
+          <p>事業者名</p>
+          <p>料金</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:post_detail' %}">
+          <img src="{% static 'assets/fee.jpg' %}" alt="#">
+          <p>投稿名</p>
+          <p>事業者名</p>
+          <p>料金</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:post_detail' %}">
+          <img src="{% static 'assets/fee.jpg' %}" alt="#">
+          <p>投稿名</p>
+          <p>事業者名</p>
+          <p>料金</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:post_detail' %}">
+          <img src="{% static 'assets/fee.jpg' %}" alt="#">
+          <p>投稿名</p>
+          <p>事業者名</p>
+          <p>料金</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:post_detail' %}">
+          <img src="{% static 'assets/fee.jpg' %}" alt="#">
+          <p>投稿名</p>
+          <p>事業者名</p>
+          <p>料金</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+{% endblock %}

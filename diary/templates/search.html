@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+  <section class="wrapper">
+    <h1>サービスを探す</h1>
+    <input type="text">
+    <button>検索</button>
+    <ul class="search_flex">
+      <li>
+        <a href="{% url 'diary:service_detail' %}">
+          <img src="{% static 'assets/main.jpg' %}" alt="#">
+          <p>サービス名</p>
+          <p>事業者名</p>
+          <p>カテゴリ</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:service_detail' %}">
+          <img src="{% static 'assets/main.jpg' %}" alt="#">
+          <p>サービス名</p>
+          <p>事業者名</p>
+          <p>カテゴリ</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:service_detail' %}">
+          <img src="{% static 'assets/main.jpg' %}" alt="#">
+          <p>サービス名</p>
+          <p>事業者名</p>
+          <p>カテゴリ</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:service_detail' %}">
+          <img src="{% static 'assets/main.jpg' %}" alt="#">
+          <p>サービス名</p>
+          <p>事業者名</p>
+          <p>カテゴリ</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:service_detail' %}">
+          <img src="{% static 'assets/main.jpg' %}" alt="#">
+          <p>サービス名</p>
+          <p>事業者名</p>
+          <p>カテゴリ</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:service_detail' %}">
+          <img src="{% static 'assets/main.jpg' %}" alt="#">
+          <p>サービス名</p>
+          <p>事業者名</p>
+          <p>カテゴリ</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+{% endblock %}

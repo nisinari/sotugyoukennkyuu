@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+
+  <section class="wrapper">
+    <h2>サービス詳細</h2>
+    <div class="service_flex">
+      <img src="{% static 'assets/fee.jpg' %}" alt="#">
+      <ul class="post_list">
+        <li>サービス名</li>
+        <li>サービスのカテゴリ</li>
+        <li>金額</li>
+      </ul>
+    </div>
+    <div class="post_detail">
+      <h3>概要</h3>
+      <p>テキスト</p>
+      <p>テキスト</p>
+      <p>テキスト</p>
+      <p>テキスト</p>
+    </div>
+    <div class="offer_button">
+      <a href="{% url 'diary:post_finish' %}">申し込む</a>
+    </div>
+  </section>
+{% endblock %}

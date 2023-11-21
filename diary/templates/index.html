@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+  <section>
+    <img src="{% static 'assets/main.jpg' %}" alt="#">
+  </section>
+
+  <section class="wrapper">
+    <h2 class="index_subtitle">検索</h2>
+    <ul class="index_flex">
+      <li>
+        <a href="{% url 'diary:search' %}">
+          ジャンル
+        </a>
+      </li>
+      <li><a href="{% url 'diary:search' %}">ジャンル</a></li>
+      <li><a href="{% url 'diary:search' %}">ジャンル</a></li>
+      <li><a href="{% url 'diary:search' %}">ジャンル</a></li>
+      <li><a href="{% url 'diary:search' %}">ジャンル</a></li>
+      <li><a href="{% url 'diary:search' %}">ジャンル</a></li>
+      <li><a href="{% url 'diary:search' %}">ジャンル</a></li>
+      <li><a href="{% url 'diary:search' %}">ジャンル</a></li>
+      <li><a href="{% url 'diary:search' %}">ジャンル</a></li>
+      <li><a href="{% url 'diary:search' %}">ジャンル</a></li>
+    </ul>
+    <input type="text">
+    <button>検索</button>
+  </section>
+  
+  <section class="wrapper">
+    <h2 class="index_subtitle">新着</h2>
+    <ul class="index_news">
+      <li>
+        <a href="{% url 'diary:service_detail' %}">
+          <img src="{% static 'assets/main.jpg' %}" alt="#">
+          <p>サービス名</p>
+          <p>事業者名</p>
+          <p>カテゴリ</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:service_detail' %}">
+          <img src="{% static 'assets/main.jpg' %}" alt="#">
+          <p>サービス名</p>
+          <p>事業者名</p>
+          <p>カテゴリ</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:service_detail' %}">
+          <img src="{% static 'assets/main.jpg' %}" alt="#">
+          <p>サービス名</p>
+          <p>事業者名</p>
+          <p>カテゴリ</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'diary:service_detail' %}">
+          <img src="{% static 'assets/main.jpg' %}" alt="#">
+          <p>サービス名</p>
+          <p>事業者名</p>
+          <p>カテゴリ</p>
+          <p>サムネイル用概要</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卒業研究</title>
+  <link href="{% static 'css/reset.css' %}" rel="stylesheet"/>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+</head>
+<body>
+    <header class=" header">
+        <div class="header_content wrapper">
+            <h1><a href="{% url 'diary:index' %}">タイトル</a></h1>
+            <ul class="ulflex">
+                <li><a href="{% url 'diary:user_entry' %}">新規利用者登録</a></li>
+                <li><a href="{% url 'diary:company_entry' %}">新規事業者登録</a></li>
+                <li><a href="{% url 'diary:company_login' %}">事業者用ログイン</a></li>
+                <li><a href="{% url 'diary:user_login' %}">依頼者用ログイン</a></li>
+            </ul>
+        </div>
+    </header>
+{% block contents %}
+{% endblock %}
+</body>
+</html>
